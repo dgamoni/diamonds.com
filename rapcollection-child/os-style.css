@@ -1,0 +1,236 @@
+/* **** Oleh Savchuk temporary styles file */
+
+.page-id-6 .one_column_text_block .content {
+    max-width: 100%;
+}
+
+/* .page-id-8 - Login / Register forms */
+.page-id-8 #customer_login .u-column1 .login {
+    padding-left: 0 !important;
+}
+
+.page-id-8 #customer_login .u-column1 .woocommerce-Button,
+.page-id-8 #customer_login .u-column2 .woocommerce-Button {
+    height: 54px;
+/*    padding: 16px 31px 10px 36px;*/
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 9px;
+    background-color: #74172b;
+    font-size: 11.02px;
+    font-family: GothamBold;
+    letter-spacing: 0.440em;
+    text-transform: uppercase;
+
+    border: 1px solid #74172b;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.page-id-8 #customer_login .woocommerce-Button:hover{
+    background: transparent;
+    border-color: #74172b;
+    color: #74172b;
+}
+
+.page-id-8 .woocommerce-category-description .line_and_dot_sep {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* ******************************************** .page-id-24 - Wishlist / List Jewelry (inviosion page 22) */
+
+.page-id-24 .one_column_text_block .content {
+    max-width: 100%;
+}
+
+.page-id-24 #wl-wrapper .woocommerce-tabs ul.tabs {
+    float: none;
+    /*width: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-top: none;
+    border-bottom: none !important;
+    width: 255px;
+}
+
+.woocommerce-tabs ul.tabs li {
+    border-bottom: none !important;
+}
+
+#wl-wrapper .wl-intro {
+    text-align: center;
+}
+
+
+/*  Wishlist tabs ( List Jewelry / Settings ) */
+.page-id-24 .col-full .content #wl-wrapper .woocommerce-tabs ul.tabs > li.wl-items-tab,
+.page-id-24 .col-full .content #wl-wrapper .woocommerce-tabs ul.tabs > li.wl-settings-tab {
+    float: left !important;
+}
+
+.page-id-24 #wl-wrapper .wl-tabs > li > a {
+    float: none;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: GothamLight;
+    color: #6a6a6a;
+    letter-spacing: 0.040em;
+    font-size: 16px;
+}
+
+.page-id-24 #wl-wrapper .wl-tabs > li.active a {
+    box-shadow: 0 2px #74172b;
+    color: #74172b;
+    font-family: GothamBook;
+}
+
+.page-id-24 .woocommerce-tabs ul.tabs li.active:after {
+    opacity: 0;
+}
+
+
+/*  List Jewelry */
+.page-id-24 .woocommerce-tabs #tab-wl-items {
+    width: 1140px;
+    max-width:100%;
+    margin-bottom: 103px;
+}
+
+
+/*  Settings */
+.page-id-24 .woocommerce-tabs #tab-wl-settings {
+    width: 777px;
+    max-width:100%;
+    margin-bottom: 103px;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5c5c5c;
+}
+
+.page-id-24 .woocommerce-tabs #tab-wl-settings label,
+.page-id-24 .woocommerce-tabs #tab-wl-settings strong {
+    font-size: 16px;
+    letter-spacing: 0.060em;
+}
+
+.page-id-24 .woocommerce-tabs #tab-wl-settings .wl-rad-table td {
+    padding-left: 0;
+    padding-right: 26px;
+    background-color: #fff;
+}
+
+.page-id-24 .woocommerce-tabs #tab-wl-settings .wl-rad-table label {
+    font-size: 15px;
+    letter-spacing: 0.020em;
+    font-family: GothamBold;
+}
+
+.page-id-24 .woocommerce-tabs #tab-wl-settings .wl-rad-table label span.wl-small {
+    font-size: 15px;
+    letter-spacing: 0.020em;
+    font-family: GothamBook;
+}
+
+.page-id-24 .woocommerce-tabs #tab-wl-settings .enter-name-capition {
+    font-size: 14px;
+    letter-spacing: 0.060em;
+}
+
+.page-id-24 .woocommerce-tabs #tab-wl-settings .wl-form .save-button {
+    margin-top: 28px;
+    font-family: GothamBold;
+    width: 100%;
+    height: 53px;
+    background-color: #74172b;
+    font-size: 11.02px;
+    letter-spacing: 0.440em;
+    text-transform: uppercase;
+
+    border: 1px solid #74172b;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+.page-id-24 .woocommerce-tabs #tab-wl-settings .wl-form .save-button:hover{
+    background: transparent;
+    border-color: #74172b;
+    color: #74172b;
+}
+
+
+/* /Settings */
+
+
+
+.page-id-24 #wl-wrapper .wl-table .product-purchase .button {
+    background-color: transparent;
+    border-color: transparent;
+    color: #74172b;
+    font-family: GothamBold;
+/*  font-weight: 500;*/
+    font-size: 11.02px;
+    letter-spacing: 0.300em;
+    text-transform: uppercase;
+}
+
+.page-id-24 #wl-wrapper .wl-table td {
+    vertical-align: middle;
+    font-family: GothamLight;
+    letter-spacing: 0.040em;
+}
+
+.page-id-24 #wl-wrapper .wl-table td.product-name a,
+.page-id-24 #wl-wrapper .wl-table td.product-price {
+    font-size: 14.04px;
+}
+
+.page-id-24 #wl-wrapper .wl-table th {
+    font-size: 18.32px;
+}
+
+
+.page-id-24 #wl-wrapper .wl-table .product-remove a {
+    color: #6a6a6a;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+
+.page-id-24 #wl-wrapper .wl-actions-table {
+    float: right;
+}
+
+.page-id-24 #wl-wrapper .wl-actions-table .btn-apply,
+.page-id-24 #wl-wrapper .wl-actions-table .move-list-sel {
+    height: 36px;
+    padding-left: 21px;
+    padding-right: 21px;
+    font-family: GothamBook;
+    letter-spacing: 0.040em;
+    font-size: 14px;
+}
+.page-id-24 #wl-wrapper .wl-actions-table .move-list-sel {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 114px;
+
+}
+
