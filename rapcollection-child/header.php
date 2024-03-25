@@ -64,6 +64,14 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
 <?php the_field('header_custom_js_code', 'option'); ?>
 <?php wp_head(); ?>
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3e881738-bb40-423b-91ef-689229f48f5b" type="text/javascript" async></script>

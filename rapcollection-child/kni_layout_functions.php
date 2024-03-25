@@ -1404,7 +1404,8 @@ function kni_get_acf_flex_content($row_layout = false, $i = 0)
                  style="background-image: url(<?php the_sub_field('image'); ?>)">
                 <div class="col-full">
                     <div class="title_form_block">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-us-logo-rapaport-collection.png">
+                       <!--  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-us-logo-rapaport-collection.png"> -->
+                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact_100.png">
                         <h1><?php the_sub_field('title'); ?></h1>
                         <div class="line_and_dot_sep"><div class="dot"></div></div>
                         <p> <?php the_sub_field('phone_email_line1'); ?><br>

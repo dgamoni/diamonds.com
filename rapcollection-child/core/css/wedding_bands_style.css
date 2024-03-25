@@ -1,0 +1,96 @@
+.single-product div.product table.variations .attribute-pa_width-ring td.value {
+	display: none;
+}
+.variations tr, .template-wedding-bands .ring-size-field {
+	background-color: #ebebeb;
+    padding: 16px;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 332px;
+    font-size: 16px;
+}
+.template-wedding-bands .ring-size-field {
+  display: flex;
+  flex-wrap: wrap;
+}
+.template-wedding-bands  a.size_guide_show {
+    margin-left: 10px;
+}
+
+.template-wedding-bands .ring-size-field label {
+	    font-size: 16px !important;
+    margin-bottom: 10px;
+}
+
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value {
+	display: flex;
+}
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value label {
+    text-indent: -100000px;
+	display: block;
+    width: 50px;
+    margin-top: -18px;
+    padding-left: 41px;
+}
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value label:before {
+    width: 33px;
+    height: 33px;
+        background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: transparent;
+    border: 2px solid #666;
+    box-sizing: border-box;
+}
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value label:after {
+	display: none;
+
+}
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value .silver label:before {
+	/*background-image: url('../img/metal-1.jpg');*/
+	background: rgba(226,226,226,1);
+	background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 23%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(23%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+	background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 23%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+	background: -o-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 23%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+	background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 23%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+	background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 23%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+
+	transform: rotate(45deg);
+
+}
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value .yellow-gold label:before {
+	/*background-image: url('../img/metal-2.jpg');*/
+	background: rgba(252,234,187,1);
+background: -moz-linear-gradient(-45deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 30%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 65%, rgba(251,223,147,1) 97%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(252,234,187,1)), color-stop(30%, rgba(252,205,77,1)), color-stop(51%, rgba(248,181,0,1)), color-stop(65%, rgba(251,223,147,1)), color-stop(97%, rgba(251,223,147,1)));
+background: -webkit-linear-gradient(-45deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 30%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 65%, rgba(251,223,147,1) 97%);
+background: -o-linear-gradient(-45deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 30%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 65%, rgba(251,223,147,1) 97%);
+background: -ms-linear-gradient(-45deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 30%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 65%, rgba(251,223,147,1) 97%);
+background: linear-gradient(135deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 30%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 65%, rgba(251,223,147,1) 97%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
+
+}
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value .platinum label:before {
+	background-image: url('../img/metal-1.jpg');
+}
+.single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value .rose-gold label:before {
+	background-image: url('../img/metal-3.jpg');
+}
+.single-product.template-wedding-bands .variations .attribute-pa_metal input[type=radio]:checked + label:before {
+	border: 4px solid #74172b !important;
+}
+
+body.single-product.template-wedding-bands span.woocommerce-Price-amount.amount {
+    font-size: 32px !important;
+}
+.template-wedding-bands .woocommerce-variation-price {
+	/*display: none;*/
+}
+.single-product.template-wedding-bands div.product .variations_button {
+    float: none;
+}
+.template-wedding-bands form.cart .wl-add-but,
+body.single-product.template-wedding-bands .single_add_to_cart_button {
+    min-width: 333px;
+}

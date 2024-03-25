@@ -1733,7 +1733,8 @@ header {
 }
 
 .site-header .site-branding img {
-    width: 300px;
+    width: 382px;
+   /* width: 300px;*/
 /*    height: 87px; */
     max-width: none;
     max-height: none;
@@ -6255,7 +6256,7 @@ header .header_row1 .search_box input::placeholder {
         text-align: center;
     }
     .site-header .custom-logo-link img {
-        max-width:160px !important;
+       /* max-width:160px !important;*/
     }
     .header_row1 a.custom-logo-link {
         display:inline-block;

@@ -990,3 +990,22 @@ if ( ! function_exists( 'storefront_init_structured_data' ) ) {
 		}
 	}
 }
+
+
+function marce_change_custom_logo_size() {
+ 	add_theme_support( 'custom-logo', array(
+ 		'height'      => 110,
+ 		'width'       => 470,
+		'flex-height' => true,
+		'flex-width'  => true,
+ 	) );
+ }
+ add_action( 'after_setup_theme', 'marce_change_custom_logo_size', 30 );
+
+function add_file_types_to_uploads($file_types) {
+	$new_filetypes = array();
+	$new_filetypes['svg'] = 'image/svg+xml';
+	$file_types = array_merge($file_types, $new_filetypes );
+	return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');

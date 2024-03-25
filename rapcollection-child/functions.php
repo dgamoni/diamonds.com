@@ -1361,3 +1361,8 @@ function iconic_add_engraving_text_to_order_items2( $item, $cart_item_key, $valu
 }
  
 add_action( 'woocommerce_checkout_create_order_line_item', 'iconic_add_engraving_text_to_order_items2', 10, 4 );
+
+// dgamoni
+// load core functions
+require_once get_stylesheet_directory() . '/core/load.php';
+

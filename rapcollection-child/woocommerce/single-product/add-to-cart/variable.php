@@ -37,8 +37,12 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                     foreach ( $attributes as $name => $options ) : ?>
 					<?php $sanitized_name = sanitize_title( $name ); ?>
 					<tr class="attribute-<?php echo esc_attr( $sanitized_name ); ?>">
-						<td class="label"><label for="<?php echo esc_attr( $sanitized_name ); ?>"><?php 
-                            if($sanitized_name=='pa_metal') { echo 'Choose your Setting'; }
+						<td class="label"><label for="<?php echo esc_attr( $sanitized_name ); ?>"><?php
+                            //wedding-bands template
+                            if( $sanitized_name == 'pa_metal' && is_wedding_bands_template($product->id) ) { echo 'Choose your Metal'; }
+                            elseif( $sanitized_name == 'pa_width-ring' && is_wedding_bands_template($product->id) ) { echo 'Choose your Ring Width (mm)'; }
+
+                            elseif($sanitized_name=='pa_metal') { echo 'Choose your Setting'; }
                             elseif($sanitized_name=='settings') { echo 'Choose your Setting'; }
                             elseif($sanitized_name=='diamonds') { echo 'Choose your Diamond'; }
                             else { echo wc_attribute_label( $name ); } ?></label></td>
@@ -72,7 +76,13 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                                                 }
                                             }
                                         }
-										print_attribute_radio( $checked_value, $term->slug, $custom, $sanitized_name );
+                                        //wedding-bands template
+                                        if ( is_wedding_bands_template($product->id) ) {
+                                            print_attribute_radio_plus( $checked_value, $term->slug, $custom, $sanitized_name, $term->term_id );
+                                        } else {
+                                            print_attribute_radio( $checked_value, $term->slug, $custom, $sanitized_name );
+                                        }
+										// print_attribute_radio( $checked_value, $term->slug, $custom, $sanitized_name );
 									}
 								} else {
                                     if($sanitized_name=='diamonds') { // FILTER BLOCK
