@@ -37,7 +37,7 @@ if (WC()->cart->get_cart_contents()) {
 		<label>Choose Font</label>
 		<p class="engraving-buttons">
 			<input id="engraving_print" class="woocommerce-form__input" type="radio" name="engraving_font_choose" value="print"
-				<?php if ($engraving_content && isset($engraving_content['font']) && ($engraving_content['font'] == 'print')) echo 'checked="checked"'; ?>>
+				<?php if ($engraving_content && isset($engraving_content['font']) && ($engraving_content['font'] == 'print')) echo 'checked="checked"'; ?> <?php if (!$engraving_content || !isset($engraving_content['font'])) echo 'checked="checked"'; ?>>
 			<label for="engraving_print" class="woocommerce-form__label "> <span>Print</span></label>
 			<input id="engraving_cursive" class="woocommerce-form__input" type="radio" name="engraving_font_choose" value="cursive" <?php if ($engraving_content && isset($engraving_content['font']) && ($engraving_content['font'] == 'cursive')) echo 'checked="checked"'; ?>>
 			<label for="engraving_cursive" class="woocommerce-form__label "> <span>Cursive</span></label>
@@ -45,6 +45,10 @@ if (WC()->cart->get_cart_contents()) {
 			<label for="engraving_custom" class="woocommerce-form__label "> <span>Custom</span></label>
 		</p>
 		<p id="custom_font_wrap" <?php if (!$engraving_content || !isset($engraving_content['font']) || !($engraving_content['font'] == 'custom')) echo 'style="display: none;"'; ?>>
+			<label for="engraving_custom_font" class="">Custom font name</label>
+			<span class="woocommerce-input-wrapper">
+				<input type="text" class="input-text " name="engraving_custom_font" id="engraving_custom_font" placeholder="Please write your engraving font name" <?php if ($engraving_content) echo 'value="'.$engraving_content['font-family'].'"'; ?>>
+			</span>
 			<select id="engraving-font" style="display: none; width: 100%;" name="engraving-font">
 				<?php 
 					//get fonts

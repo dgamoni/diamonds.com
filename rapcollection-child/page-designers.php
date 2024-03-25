@@ -11,6 +11,7 @@
  Template Name: Featured Designers
  */
 $poid = get_field('designer');
+$parent_url = ($wp_query->post->post_parent) ? get_the_permalink($wp_query->post->post_parent) : get_the_permalink($wp_query->post->ID);
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -48,15 +49,26 @@ get_header(); ?>
 		if($t_posts && $i) {
 			$t_posts = array();
 			$t_posts = array_merge ($t_posts, array_slice($posts, $i));
-			$t_posts = array_merge ($t_posts, array_slice($posts, 0, ($i-1)));
+			$t_posts = array_merge ($t_posts, array_slice($posts, 0, $i));
 		} else {
 			$t_posts = $posts;
 		}
 		
 		?>
             <?php foreach($t_posts as $post) { ?>
+			<?php 
+				// search for the designer's page 
+				$pages = get_posts(array(
+					'numberposts'	=> 1,
+					'post_type'		=> 'page',
+					'meta_key'		=> 'designer',
+					'meta_value'	=> (int)$post->ID
+				));
+				
+				$url = ($pages) ? get_the_permalink($pages[0]->ID) : $parent_url;
+			?>
             <div>
-                <div data-id="<?php echo $post->ID; ?>" style="background-image:url(<?php echo get_the_post_thumbnail_url( $post->ID, 'medium_large' ); ?>)" class="owl-image"></div>
+                <div data-id="<?php echo $post->ID; ?>" style="background-image:url(<?php echo get_the_post_thumbnail_url( $post->ID, 'medium_large' ); ?>)" class="owl-image" data-url="<?php echo $url; ?>"></div>
             </div>
             <?php } ?>
         </div>
@@ -71,17 +83,17 @@ get_header(); ?>
             <div class="right_part">
                 <h2 class="designer_name"><?php echo $post->post_title; ?></h2>
                 <span><?php the_field('top_string', $post->ID); ?></span>
-<?php if( have_rows('work_image') ): ?>
- <div class="works">
-    <?php while( have_rows('work_image') ): the_row(); ?>
-     <a href="<?php the_sub_field('link'); ?>">
-         <div class="image" style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
-     <div><h4><?php the_sub_field('title'); ?></h4>
-     <h5><?php the_sub_field('price'); ?></h5></div>
-     </a>
-    <?php endwhile; ?>
-</div>
-<?php endif; ?>
+					<?php if( have_rows('work_image') ): ?>
+					 <div class="works">
+						<?php while( have_rows('work_image') ): the_row(); ?>
+						 <a href="<?php the_sub_field('link'); ?>">
+							 <div class="image" style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+						 <div><h4><?php the_sub_field('title'); ?></h4>
+						 <h5><?php the_sub_field('price'); ?></h5></div>
+						 </a>
+						<?php endwhile; ?>
+					</div>
+					<?php endif; ?>
                 
                 <div class="buttons">
                 <a class="slider_button" href="<?php the_field('collection_link', $post->ID); ?>"><?php the_field('collection_link_text', $post->ID); ?></a>

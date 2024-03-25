@@ -7,7 +7,9 @@
     display: block;
     margin-bottom: 20px;
     max-width: 332px;
-    font-size: 16px;
+    /*font-size: 16px;*/
+        font-size: 18.53px;
+    font-family: 'Times New Roman' !important;
 }
 .template-wedding-bands .ring-size-field {
   display: flex;
@@ -18,12 +20,18 @@
 }
 
 .template-wedding-bands .ring-size-field label {
-	    font-size: 16px !important;
+	    /*font-size: 16px !important;*/
     margin-bottom: 10px;
+    font-size: 18.53px !important;
+    font-family: 'Times New Roman' !important;
 }
 
 .single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value {
 	display: flex;
+    flex-wrap: wrap;
+    height: 87px;
+    margin-bottom: 0;
+    text-align: center;
 }
 .single-product.template-wedding-bands div.product table.variations .attribute-pa_metal td.value label {
     text-indent: -100000px;
@@ -93,4 +101,102 @@ body.single-product.template-wedding-bands span.woocommerce-Price-amount.amount 
 .template-wedding-bands form.cart .wl-add-but,
 body.single-product.template-wedding-bands .single_add_to_cart_button {
     min-width: 333px;
+}
+
+
+/*.storefront-full-width-content.single-product div.product .product_gallery_wrap .woocommerce-product-gallery {
+	width: 100%;
+	    margin-bottom: 50px;
+}*/
+
+.wedding-bands_gallery_wrap {
+	width: 39.1304347826%;
+    float: left;
+    margin-right: 4.347826087%;
+    font-family: GothamLight;
+    font-size: 14px;
+}
+.wedding-bands_gallery_wrap ul {
+	margin-left: 14px;
+}
+.storefront-full-width-content.single-product.template-wedding-bands div.product .wedding-bands_gallery_wrap .woocommerce-product-gallery {
+	width: 100%;
+	/*margin-bottom: 50px;*/
+}
+.title_single_excerpt_title {
+	font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman' !important;
+    color: #8e8e8e;
+}
+.title_single_excerpt_item {
+	font-weight: 600;
+}
+body.single-product.template-wedding-bands h1.product_title.entry-title {
+    font-size: 31.68px !important;
+}
+.template-wedding-bands .irs-line-mid,
+.template-wedding-bands .irs-line-left,
+.template-wedding-bands .irs-line-right,
+.template-wedding-bands .irs-bar,
+.template-wedding-bands .irs-bar-edge, 
+.template-wedding-bands .irs-slider {
+   /* background: url(../img/sprite-skin-flat-1.png) repeat-x ;*/
+    background-image: url(../img/sprite-skin-flat-1.png) !important;
+    /*margin-left: 4px;*/
+    height: 13px;
+}
+
+.template-wedding-bands .irs-from,
+.template-wedding-bands .irs-to,
+.template-wedding-bands .irs-single {
+    background: transparent;
+    color: black;
+    font-size: 14px;
+    top: 40px;
+}
+.template-wedding-bands .irs-from:after,
+.irs-to:after
+/*.template-wedding-bands .irs-single:after */
+{
+	display: none;
+}
+.template-wedding-bands .irs {
+    margin-bottom: 10px;
+    top: -4px;
+}
+.template-wedding-bands .irs-grid-text {
+    display: none;
+}
+.template-wedding-bands .irs-grid-pol {
+    width: 2px;
+    height: 19px;
+        opacity: 0.5;
+            background: #999999;
+}
+.template-wedding-bands .irs-with-grid .irs-grid {
+    top: 17px;
+}
+.template-wedding-bands .irs-grid-pol.small {
+    display: none;
+}
+.template-wedding-bands .irs-line {
+    height: 13px;
+}
+.template-wedding-bands .irs-slider.single {
+    margin-left: 4px;
+    height: 25px;
+    /*background-position: 0 -118px;*/
+}
+.template-wedding-bands .irs-bar,
+.template-wedding-bands .irs-bar-edge {
+    top: 21px;
+}
+/*.template-wedding-bands .irs-single::after {
+    content: ' mm.';
+}*/
+.metal_val {
+    width: 212px;
+    padding-top: 10px;
 }

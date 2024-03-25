@@ -1282,16 +1282,19 @@ function save_engraving_settings ($posted_data) {
 			
 			if ($post['engraving_font_choose'] == 'custom') {
 				
+				/*
 				if (isset($post['use_custom_engraving'])) { // user fonr
 					WC()->cart->cart_contents[ $engraving_key ]['font-family'] = $post['custom_engraving_font_name'];
 				} else {
 					WC()->cart->cart_contents[ $engraving_key ]['font-family'] = $post['engraving-font'];
 				}
+				*/
+				WC()->cart->cart_contents[ $engraving_key ]['font-family'] = $post['engraving_custom_font'];
 			}
 			
 			// use user file or not
 			if (isset($post['use_custom_engraving'])) {
-				WC()->cart->cart_contents[ $engraving_key ]['use-file'] = true;
+				WC()->cart->cart_contents[ $engraving_key ]['use-file'] = false; // true to enable files 
 			} else {
 				WC()->cart->cart_contents[ $engraving_key ]['use-file'] = false;
 			}

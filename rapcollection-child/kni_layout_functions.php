@@ -441,6 +441,9 @@ function speak_to_concierge_button_on_product_page() {
     if(has_term( 'Designer Collection', 'product_cat', $product->get_id() )) {
         echo '<a class="button view-description wl-add-but clearfix" id="concierge_form" href="#" onclick="">SPEAK WITH DESIGNER</a>';
     }
+    if(has_term( 'Exquisite Diamonds', 'product_cat', $product->get_id() )) {
+        echo '<a href="/checkout/" class="single_add_to_cart_button button alt class_exp_modal">'. esc_html( $product->single_add_to_cart_text() ) .'</a>';
+    }
 }
 /*
 //woocommerce_single_product_summary
@@ -1405,7 +1408,8 @@ function kni_get_acf_flex_content($row_layout = false, $i = 0)
                 <div class="col-full">
                     <div class="title_form_block">
                        <!--  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact-us-logo-rapaport-collection.png"> -->
-                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact_100.png">
+                       <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact_100.png"> -->
+                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_h.png">
                         <h1><?php the_sub_field('title'); ?></h1>
                         <div class="line_and_dot_sep"><div class="dot"></div></div>
                         <p> <?php the_sub_field('phone_email_line1'); ?><br>

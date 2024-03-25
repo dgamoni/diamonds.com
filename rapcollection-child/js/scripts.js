@@ -666,10 +666,11 @@ jQuery(function ($) {
     owl.on('changed.owl.carousel', function(property) {
         var current = property.item.index;
         var id = $(property.target).find(".owl-item").eq(current).find(".owl-image").data('id');
+		
         $(property.target).find(".owl-item").removeClass('side');
         $(property.target).find(".owl-item").removeClass('side-left');
         $(property.target).find(".owl-item").removeClass('side-right');
-		 $(property.target).find(".owl-item").removeClass('side-lleft');
+		$(property.target).find(".owl-item").removeClass('side-lleft');
         $(property.target).find(".owl-item").removeClass('side-rright');
 		$(property.target).find(".owl-item").eq(current-1).addClass('side side-lleft');
         $(property.target).find(".owl-item").eq(current-2).addClass('side side-left');
@@ -686,7 +687,8 @@ jQuery(function ($) {
 			jQuery('.featured_designer_'+id).fadeIn(300);
         }, 300);
 		
-		
+		var url = $(property.target).find(".owl-item").eq(current).find(".owl-image").data('url');
+		history.pushState('', '', url);
     });
     owl.on('resized.owl.carousel', function(property) {
         var current = property.item.index;

@@ -53,4 +53,20 @@ jQuery(document).ready(function($) {
 	    //$('.irs').addClass('irs--flat');
 
 
+	    $('.ring-size-field').insertAfter('.attribute-pa_metal');
+	    $('.ring-size-field label').prepend('2. ');
+	    //$('.template-wedding-bands .irs-single').append(' mm.');
+	    
+	    $('.template-wedding-bands .attribute-pa_metal .value').append('<div class="metal_val"></div>');
+
+	    var data_name = $(".template-wedding-bands .attribute-pa_metal input[type='radio']:checked").attr('data-name');
+	    $('.metal_val').text(data_name);
+	    
+	    $('.template-wedding-bands .attribute-pa_metal input').on('change', function() {
+	    	var data_name = $(this).attr('data-name');
+	    	$('.metal_val').text(data_name);
+		});
+
+
+
 }); 

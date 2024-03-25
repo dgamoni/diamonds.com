@@ -39,8 +39,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 					<tr class="attribute-<?php echo esc_attr( $sanitized_name ); ?>">
 						<td class="label"><label for="<?php echo esc_attr( $sanitized_name ); ?>"><?php
                             //wedding-bands template
-                            if( $sanitized_name == 'pa_metal' && is_wedding_bands_template($product->id) ) { echo 'Choose your Metal'; }
-                            elseif( $sanitized_name == 'pa_width-ring' && is_wedding_bands_template($product->id) ) { echo 'Choose your Ring Width (mm)'; }
+                            if( $sanitized_name == 'pa_metal' && is_wedding_bands_template($product->id) ) { echo '1. Choose your Metal'; }
+                            elseif( $sanitized_name == 'pa_width-ring' && is_wedding_bands_template($product->id) ) { echo '3. Choose your Ring Width (mm)'; }
 
                             elseif($sanitized_name=='pa_metal') { echo 'Choose your Setting'; }
                             elseif($sanitized_name=='settings') { echo 'Choose your Setting'; }
@@ -319,6 +319,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				 */
 				do_action( 'woocommerce_after_single_variation' );
 			?>
+
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	<?php endif; ?>

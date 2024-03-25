@@ -1733,8 +1733,8 @@ header {
 }
 
 .site-header .site-branding img {
-    width: 382px;
-   /* width: 300px;*/
+    /*width: 382px;*/
+    width: 300px;
 /*    height: 87px; */
     max-width: none;
     max-height: none;
@@ -5871,7 +5871,7 @@ body.single-product .quick-view div.product {
     }
 }
 .woof_container_pa_price .woof_list_checkbox li:not(:nth-last-child(-n+3)) {
-    display:none;
+    /*display:none;*/
 }
 .bottom_mc_form {
     margin:auto;
@@ -6651,4 +6651,75 @@ button#save_engraving {
 
     margin-bottom: 0;
     line-height: 1;
+}
+
+/*rebrending*/
+#media_image-6 {
+    margin: 0;
+}
+.block.footer-widget-1 {
+     display: flex;
+    align-items: center;
+}
+
+select#engraving-font {
+    display: none!important;
+}
+
+select#engraving-font+.select2 {
+    display: none!important;
+}
+
+p#upload_font {
+    display: none!important;
+}
+
+input#engraving_custom_font {
+    width: 100%;
+}
+
+.woof_select_radio_check dt a span.woof_hida_small:before {
+    content: attr(data-title);
+    display: block;
+}
+
+.woof_products_top_panel2 {
+    display: none!important;
+}
+
+.woof_select_radio_check dt a span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 9px 2px 0;
+    width: 100%;
+}
+
+.woof_submit_search_form_container {
+    display: inline-block;
+    padding: 10.7px 9px 11px 0px !important;
+    font-family: GothamLight !important;
+    font-size: 12.86px !important;
+    line-height: 23px !important;
+    letter-spacing: 0.023em !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 10.7px 9px 11px 0px !important;
+}
+
+.woof_submit_search_form_container button {
+    cursor: pointer;
+    width: 100%;
+    background: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    color: #383838 !important;
+    font-family: GothamLight !important;
+}
+
+.woof_submit_search_form_container button:hover {
+    color: #9a2336!important;
+    background: none;
 }

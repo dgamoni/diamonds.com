@@ -61,6 +61,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div>	
 
 <div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php 
+	global $post;
+	if ( is_wedding_bands_template( $post->ID ) ) { ?>
+		<div class="wedding-bands_gallery_wrap">
+	<?php } ?>
+
 	<?php
 	/**
 		 * woocommerce_before_single_product_summary hook.
@@ -70,6 +77,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
+
+	<?php
+	if ( is_wedding_bands_template( $post->ID ) ) { ?>
+		</div>
+	<?php } ?>
 
 	<div class="summary entry-summary">
 
